@@ -462,3 +462,39 @@
     transform:none !important;opacity:1 !important;transition:none !important;
   }
 }
+
+
+/* 23/10 v7 — svg icons + refined footer institutions */
+.icon-wrap{display:inline-flex;align-items:center;justify-content:center;line-height:0;vertical-align:middle}
+.icon-svg{display:block;width:1em;height:1em;flex:0 0 auto}
+.header-cta .icon-wrap,.btn-acid .icon-wrap{font-size:18px}
+.text-link .icon-wrap,.underline-link .icon-wrap,.hero-panel-link .icon-wrap,.exp-arrow .icon-svg,.topic-nav .icon-wrap,.topic-footer .icon-wrap,.footer .icon-wrap{font-size:16px}
+.scroll-rail .icon-svg{width:16px;height:16px}
+.hero-panel-free .icon-inline{margin-right:8px;font-size:10px;color:var(--acid)}
+.instagram-direct-icon .icon-svg{width:24px;height:24px}
+.detail-icon .icon-svg{width:16px;height:16px}
+.exp-arrow{display:inline-flex;align-items:center;justify-content:center}
+.footer-top>a:last-child,.footer-bottom a{display:inline-flex;align-items:center;gap:8px}
+.instagram-direct b.icon-wrap{margin-left:6px}
+
+/* Footer logos smaller and on one line */
+@media(min-width:851px){
+  .footer-institutions{display:flex;align-items:flex-start;justify-content:flex-start;gap:2.8vw !important;flex-wrap:nowrap !important;padding:34px 0 58px !important}
+  .footer-institutions>div{min-width:0 !important;flex:0 1 auto !important;gap:12px !important}
+  .footer-institutions img{width:220px !important;max-height:54px !important}
+  .footer-institutions>div:last-child img{width:250px !important;max-height:54px !important}
+}
+@media(max-width:850px){
+  .header-cta .icon-wrap,.btn-acid .icon-wrap{font-size:16px}
+  .text-link .icon-wrap,.underline-link .icon-wrap,.hero-panel-link .icon-wrap,.exp-arrow .icon-svg,.topic-nav .icon-wrap,.topic-footer .icon-wrap,.footer .icon-wrap{font-size:14px}
+  .footer-institutions{flex-direction:row !important;flex-wrap:nowrap !important;gap:18px !important;align-items:flex-start !important;overflow-x:auto}
+  .footer-institutions>div{width:auto !important;flex:0 0 auto !important;min-width:0 !important}
+  .footer-institutions img{width:180px !important;max-height:48px !important}
+  .footer-institutions>div:last-child img{width:205px !important;max-height:48px !important}
+}
+@media(max-width:570px){
+  .scroll-rail .icon-svg{width:13px;height:13px}
+  .instagram-direct-icon .icon-svg{width:21px;height:21px}
+  .footer-institutions img{width:150px !important;max-height:42px !important}
+  .footer-institutions>div:last-child img{width:175px !important;max-height:42px !important}
+}
