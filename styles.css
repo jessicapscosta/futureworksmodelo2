@@ -498,3 +498,7 @@
   .footer-institutions img{width:150px !important;max-height:42px !important}
   .footer-institutions>div:last-child img{width:175px !important;max-height:42px !important}
 }
+
+/* v8 — Secao 3: asterisco vetorial real em vez do caractere tipografico */
+.topic-symbol{display:inline-flex;align-items:center;justify-content:center;width:1em;height:1em;flex:0 0 auto}
+.topic-asterisk-svg{display:block;width:100%;height:100%;color:inherit;overflow:visible}
