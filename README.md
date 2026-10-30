@@ -29,3 +29,25 @@ A navegação, as abas temáticas, a animação de abertura, o efeito de paralla
 - Hero usa `assets/robo-future-hero.png` (imagem fornecida) centralizada, sem círculo colorido ou marca d’água de fundo.
 - Seção planeta usa `assets/planeta-future-2026.png` (imagem fornecida), centralizada e com revelação vertical e degradê preto inferior.
 - Textos, demais imagens, logos, navegação e links preservados.
+
+
+## Revisão de 30/10/2026 — animações e performance
+
+**Animações novas**
+- Título "O futuro não é algo que você espera…": as palavras acendem conforme a rolagem.
+- Planeta: sobe de baixo para cima acompanhando a rolagem.
+- Assuntos (Programação): a seção fica fixa na tela e a rolagem passa os 7 temas na horizontal; no celular, faixa de botões + título e texto na mesma tela; também troca deslizando o dedo/trackpad ou pelas setas.
+- Mãos: se aproximam com a rolagem e soltam uma faísca ao se tocarem.
+- Tags da comunidade: grade organizada, entrada em cascata, flutuação e destaque verde que passeia.
+- Título final "O amanhã começa agora.": letras normais que viram partículas só onde o mouse/dedo passa.
+- Androide da seção Experiências sem moldura (anéis e brilho soltos na seção).
+
+**Leveza**
+- Imagens convertidas para WebP: a pasta `assets/` caiu de ~6,4 MB para ~0,6 MB, sem perda visível.
+- Imagens que não eram usadas foram removidas do pacote.
+- Fontes do Google reduzidas aos pesos realmente usados.
+- Animações só rodam quando há movimento (nada fica processando com a página parada); efeito de partículas só é montado no primeiro toque/passagem do mouse.
+- Todas as animações respeitam "reduzir movimento" do sistema.
+
+**Ajustes rápidos**
+- Velocidade dos assuntos: em `script.js`, procure `const HOLD` (pausa de cada tema) e `0.5 : 0.55` (rolagem por tema no celular/computador).

@@ -1,0 +1,23 @@
+# Future Works Summit — buscadores e assistentes de IA são bem-vindos
+User-agent: *
+Allow: /
+
+# Assistentes de IA (GEO): liberados para ler e citar o site
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
